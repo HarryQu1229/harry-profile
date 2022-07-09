@@ -13,6 +13,11 @@ const ProjectsCard = ({ data }) => {
             <div className="d-flex px-3">
               <div className="pl-4">
                 <h3>{data.name}</h3>
+                <img
+                  style={{ width: "100%" }}
+                  src={`img/projects/${data.image}`}
+                  alt="project image"
+                />
                 <p className="description mt-3">{data.desc}</p>
                 {data.github ? (
                   <Button

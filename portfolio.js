@@ -6,7 +6,7 @@ export const greetings = {
   description:
     "I am a Software Engineering Student at University of Auckland. Well-versed in technology to create reliable and user-friendly systems. Skilled leader who has the proven ability to motivate, educate, and manage teams to build software programs and effectively track changes. I am passionate about learning and developing prodcts/services that can bring value for people.",
   resumeLink:
-    "https://drive.google.com/file/d/1wouUrXf36HiVoyoh46TkJrOhmxVLVKWx/view?usp=sharing",
+    "https://drive.google.com/file/d/1B23BcXhNer6okxbhWAfGOJpwAfQF_zva/view?usp=sharing",
 };
 
 export const openSource = {
@@ -90,18 +90,14 @@ export const skillsSection = {
       title: "Back-End Development",
       lottieAnimationFile: "/lottie/skills/backend.json", // Path of Lottie Animation JSON File
       skills: [
+        emoji("🌙 Built RESTful APIs in Spring Boot, ASP.Net and Express.js"),
         emoji(
-          "🌙 Built RESTful APIs in Spring Boot (Cloud), ASP.Net and Express.js"
-        ),
-        emoji(
-          "🌙 Implemented file sync tool and personalised shell programs using C, Java"
+          "🌙 Implemented file sync tool and custom shell programs using C, Java"
         ),
         emoji(
           "🌙 Designed database schemas in relational databases and used SQL for database manipulation"
         ),
-        emoji(
-          "🌙 Added cache system to application with Redis for fast server reponse"
-        ),
+        emoji("🌙 Implemented cache system with Redis for fast server reponse"),
         emoji(
           "🌙 Created a distributed messaging service using RabbitMQ for backend microservices decoupling and load balancing"
         ),
@@ -130,6 +126,22 @@ export const skillsSection = {
         {
           skillName: "Redis",
           fontAwesomeClassname: "logos:redis",
+        },
+        {
+          skillName: "C Sharp",
+          fontAwesomeClassname: "logos:c-sharp",
+        },
+        {
+          skillName: "ASP Dot Net",
+          fontAwesomeClassname: "mdi:dot-net",
+        },
+        {
+          skillName: "Sql Server",
+          fontAwesomeClassname: "vscode-icons:file-type-plsql",
+        },
+        {
+          skillName: "Azure DevOps",
+          fontAwesomeClassname: "cib:azure-devops",
         },
       ],
     },
@@ -187,7 +199,7 @@ export const skillsSection = {
           fontAwesomeClassname: "vscode-icons:file-type-python",
         },
         {
-          skillName: "Recursion",
+          skillName: "Data Structure",
           fontAwesomeClassname: "carbon:connect-recursive",
         },
       ],
@@ -251,14 +263,26 @@ export const educationInfo = [
 
 export const experience = [
   {
+    role: "Software Developer Intern",
+    company: "Tidy International",
+    companylogo: "/img/icons/common/tidyInternational.png",
+    date: "June 2022 - Now",
+    descBullets: [
+      "Worked on migrating legacy infrastructure to modern stack, utilising .NET Core, CQRS, and Azure Cloud with CLEAN architecture.",
+      "Developed Restful APIs and consistently communicated with the company's project manager to ensure expectations was met.",
+      "Added over 120 unit tests for existing code base and reported several issues discovered, while creating project documentation.",
+      "Designed and applied data structure and algorithms solutions for Backend services which improved software efficiency and performance",
+    ],
+  },
+  {
     role: "Software Developer and Marketer Intern",
     company: "The Intern Group",
     companylogo: "/img/icons/common/theInternGroup.png",
     date: "Dec 2020 - Mar 2021",
     descBullets: [
-      "Participated in multiple products’ development life cycle including planning, developing, testing, and debugging",
-      "Troubleshot known issues, solving approximately 50 problems every week",
-      "Drew up detailed Technical Reports and user stories based on clients’ product requirements",
+      "Participated in 3 products’ development life cycle including planning, developing, and testing in Frontend (JavaScript) and Backend (Java).",
+      "Provided prompt solutions and proactive troubleshooting support to swiftly resolve subtle and complex issues.",
+      "Drew up detailed Technical Reports and user stories based on clients’ product requirements.",
       "Focused on user experience design to meet users’ needs head-on",
       "Conducted market research and competitor analysis from various sources to explore desirable product features for clients’ web applications",
     ],
@@ -269,28 +293,40 @@ export const projects = [
   {
     name: "Harry Blog",
     desc: "My personal blog website using Hexo and JavaScript hosted on GitHub pages and making use of GitHub Actions to deploy the website on every push. I also posted all my study notes and technical writings on the blog.",
+    image: "harry_blog.jpg",
     github: "https://github.com/HarryQu1229/HarryQu1229.github.io",
     link: "https://harryqu1229.github.io/",
   },
   {
     name: "Harry Portfolio",
     desc: "My personal portfolio website! Developed with Reactjs, implemented server side renderig with Nextjs ,hosted by Vercels and Github Actions.",
+    image: "harry_profile.jpg",
     github: "https://github.com/HarryQu1229/harry-profile",
     link: "https://harry-profile-fawn.vercel.app/",
   },
   {
     name: "Easy Shopping",
     desc: "A java microservices full stack web application built with Vue.js (Frontend), SpringBoot and SpringCloud (Backend), and RabbitMQ.",
+    image: "easy_shopping.png",
     github: "https://github.com/HarryQu1229/Easy-Shopping",
+  },
+  {
+    name: "Peckish",
+    desc: "A Hackathon project developed with React, React-Router and Material-UI in 48 hours aimed to provide a commercial platform for food vendors/food trucks to sell their products.",
+    image: "peckish.jpg",
+    github: "https://github.com/HarryQu1229/Peckish",
+    link: "https://devpost.com/software/peckish",
   },
   {
     name: "Māori Vocab Learner",
     desc: "A Text to Speech graphical user interface that helps children learn Māori vocabulary built with Bash, Java, JavaFX, SceneBuilder and CSS.",
+    image: "kemu_kupu.png",
     github: "https://github.com/HarryQu1229/Maori-Vocab-Learner",
   },
   {
     name: "2048",
     desc: "Worked with the Microsoft Student Accelerator’s developer team to create a 2048 game web application (Currently kept private from members).",
+    image: "2048.jpg",
     github: "https://github.com/NZMSA",
   },
 ];
@@ -309,6 +345,6 @@ export const feedbacks = [
   {
     name: "Technical Writing",
     achievement:
-      "Wrote over 100 technical articles for over 200 readers from 7 different countries.",
+      "Wrote over 100 technical articles on my blog and attracted over 400 readers.",
   },
 ];
